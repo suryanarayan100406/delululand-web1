@@ -47,7 +47,10 @@ export default function ChatLayout({
   return (
     <div className="min-h-screen bg-black text-white">
       <header className="flex justify-between items-center p-4 border-b border-zinc-800">
-        <span className="text-sm opacity-80">{userEmail}</span>
+       <span className="text-sm font-medium text-green-400">
+  Logged in as: {userEmail}
+</span>
+
         <button
           onClick={logout}
           className="text-sm px-3 py-1 rounded bg-zinc-800 hover:bg-zinc-700"
